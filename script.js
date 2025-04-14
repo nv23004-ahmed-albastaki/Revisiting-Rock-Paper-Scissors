@@ -42,7 +42,7 @@ function announceWinner() {
     const winner = playerScore === 5 ? 'Player' : 'Computer';
     document.getElementById('results').textContent =
         `Game Over! ${winner} wins the game!`;
-   
+
     // Disable buttons after game ends
     document.querySelectorAll('button').forEach(button => {
         button.disabled = true;
